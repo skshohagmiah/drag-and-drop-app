@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(100, 99, 99);
+}
+.drag-container {
+  width: 600px;
+  height: 600px;
+  background: rgb(231, 224, 224);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  border: 2px dotted rgb(62, 61, 61);
+  border-radius: 2rem;
+  box-shadow: 0px 5px 10px white;
+}
+.drag-container .icons i {
+  font-size: 8rem;
+  color: rebeccapurple;
+}
+.drag-container.active {
+  border: 3px solid rebeccapurple;
+}
+.drag-container .title {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.drag-container button {
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  color: rebeccapurple;
+  cursor: pointer;
+  background: transparent;
+}
